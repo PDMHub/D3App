@@ -9,9 +9,7 @@ var w = 960,
     nodes = [],
     node;
 
-var vis = d3.select("body").append("svg")
-    .attr("width", w)
-    .attr("height", h);
+var vis = d3.select("body").append("svg").attr("width", w).attr("height", h);
 
 var force = d3.layout.force()
     .nodes(nodes)
@@ -26,10 +24,7 @@ force.on("tick", function(e) {
 setInterval(function(){
 
   // Add a new random shape.
-  nodes.push({
-    type: d3.svg.symbolTypes[~~(Math.random() * d3.svg.symbolTypes.length)],
-    size: Math.random() * 300 + 100
-  });
+  nodes.push({type: d3.svg.symbolTypes[~~(Math.random() * d3.svg.symbolTypes.length)], size: Math.random() * 300 + 100});
 
   // Restart the layout.
   force.start();
