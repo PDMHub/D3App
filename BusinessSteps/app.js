@@ -60,16 +60,8 @@ function createForceLayout(nodesLinksSchema)
 //createForceLayout(nodesLinks)
 //loadFile("GIISschema.json");
 
-var data = {"nodes":[{"label": "Клиент 1234", "type": "participant", "description":"Описание1"},
-{"label": "ОИС", "type": "participant", "description":"Описание2"},
-{"label": "ОТО", "type": "participant", "description":"Описание3"},
-{"label": "Название подсистемы ГИИС ЭБ", "type": "question", "description":"Какую подсистему ГИИС ЭБ вы используете?"},
-{"label": "Название и версия браузера", "type": "question", "description":"Какой браузер и какой версии вы используете?"},
-{"label": "ПУИО ЭБ", "type": "answer", "description":"Подсистема учета и отчетности ЭБ"},
-{"label": "ПУР ЭБ", "type": "answer", "description":"Подсистема управления расходами ЭБ"},
-{"label": "Не знаю какая подсистема ЭБ", "type": "answer", "description":"Подсистема управления расходами ЭБ"},
-{"label": "Браузер Спутник", "type": "answer", "description":"У меня браузер 'Спутник'"},
-{"label": "Браузер Firefox", "type": "answer", "description":"У меня браузер Mozilla Firefox"}
+var data = {"nodes":[{"label": "Label 1", "type": "participant", "description":"Decr1"},
+{"label": "OIS", "type": "participant", "description":"Descr2"},
 ],
 "links":
 [	{"source":0, "target":1},
