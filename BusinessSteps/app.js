@@ -1,9 +1,7 @@
 ﻿function initSimulationWithFile(fileToLoad){
-    queue()
-    .defer(d3.json, fileToLoad)
-    .defer(d3.json, fileToLoad)
-    .await(function (error, file)
-         {if (error) throw error;
+    d3.queue()
+    .defer(d3.json, 'GIISschema.json')
+    .await(function (error, file){ if (error) throw error;
             createForceLayout(file);
             console.log('OK');
             });
