@@ -1,4 +1,10 @@
-﻿{"nodes":[{"label": "Клиент 1234", "type": "participant", "description":"Описание1"},
+﻿{"nodes":
+[
+	{
+		"label": "Клиент 1234",
+		"type": "participant",
+		"description": "Описание1"
+	},
 	{"label": "ОИС", "type": "participant", "description":"Описание2"},
 	{"label": "ОТО", "type": "participant", "description":"Описание3"},
 	{"label": "Название подсистемы ГИИС ЭБ", "type": "question", "description":"Какую подсистему ГИИС ЭБ вы используете?"},
